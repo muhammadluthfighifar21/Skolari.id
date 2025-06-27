@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo with Description</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .photo-container {
+            position: relative;
+            margin-bottom: 30px;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+        
+        .photo {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+        
+        .photo:hover {
+            transform: scale(1.02);
+        }
+        
+        .description {
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        
+        .description h2 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        
+        .description p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+        
+        .metadata {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            padding-top: 10px;
+            border-top: 1px solid #eee;
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            .description {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="photo-container">
+            <img 
+                 src="TTS.jpg" 
+    alt="Scenic mountain landscape at sunrise..." 
+    class="photo"
+    id="mainPhoto"
+    style="max-width: 100%; width: 400px; height: auto; display: block; margin: 0 auto;"
+    onerror="this.onerror=null;this.src='https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ce75b378-11a4-416e-9d00-18c15c0848f5.png';"
+/>
+        </div>
+        
+        <div class="description">
+            <h2>Thursday Training Skolari</h2>
+            <p>Ayo gabung bersama kami dalam latihan rutin Kamis malam yang seru dan bermanfaat!
+Di program Thursday Training, kita akan melakukan strength training untuk memperkuat otot dan mencegah cedera, serta mendapatkan edukasi seputar teknik dan pengetahuan lari langsung dari mentor komunitas.
+</p>
+<p>📍 Lokasi: Senayan Plaza Barat, Gate A</p>
+<p>🕗 Waktu: Setiap Kamis, pukul 19.00 WIB</p>
+<p>💸 GRATIS untuk semua peserta!</p>
+<p>🥤 Tersedia refreshment setelah latihan.</p>
+<p>Cocok untuk semua level — dari pelari pemula hingga yang sudah berpengalaman.
+Bawa semangatmu, ajak temanmu, dan jadikan Kamis malammu lebih sehat dan produktif bersama Skolari.id!</p>
+            
+        </div>
+    </div>
+</body>
+</html>
